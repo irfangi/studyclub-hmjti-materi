@@ -1,0 +1,79 @@
+/* body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.discussion-border {
+    position: relative;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+} */
+
+/* menu */
+/* #newDisc{
+    width: 100%;
+}
+
+.discussion-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+.discussion-menu ul li{
+    line-height: 2em;
+}
+
+.tags a{
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+}
+*/
+/* content */
+/*
+.discussion-content{
+    margin-bottom: 10px;
+}
+
+.discussion-content *{
+    margin: 0;
+}
+
+.discussion-content .content-title{
+    font-weight: 500;
+    text-decoration: none;
+    color: #343a40!important;
+}
+
+.discussion-content p{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.pagination .page-link{
+    color: black;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+} */
+
+
+/* login */
+
+.login-main{
+    height: 100vh;
+}
+
+.bg-login{
+    background: linear-gradient(117.61deg, #297DDF 0%, #4BD4FF 100%);
+}
