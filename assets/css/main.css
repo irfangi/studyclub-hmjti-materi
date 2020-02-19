@@ -37,7 +37,13 @@
 }
 
 main {
-  margin-top: 100px;
+  margin-top: 55px;
+}
+
+@media only screen and (max-width: 992px) {
+  .side-menu {
+    display: none;
+  }
 }
 
 #formTopic {
@@ -54,5 +60,13 @@ main {
 
 #newDisc:scope {
   border: none;
+}
+
+.tags-and-title {
+  background-color: #e7e7e7;
+}
+
+.date {
+  font-size: 1em;
 }
 /*# sourceMappingURL=main.css.map */

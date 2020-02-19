@@ -31,7 +31,14 @@ $color-light : #e7e7e7;
     }
 }
 main{
-    margin-top: 100px;
+    margin-top: 55px;
+}
+
+//side menu
+@media only screen and (max-width:992px){
+    .side-menu{
+        display: none;
+    }
 }
 
 // form input
@@ -48,4 +55,12 @@ main{
 
 #newDisc:scope{
     border: none;
+}
+
+//detail
+.tags-and-title{
+    background-color: $color-light;
+}
+.date{
+    font-size: 1em;
 }

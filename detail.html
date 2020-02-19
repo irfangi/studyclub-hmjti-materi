@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Web Diskusi</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,85 +21,137 @@
   <body>
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Web Diskusi</a>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 cari-diskusi" type="search" placeholder="Search" aria-label="Search">
-                    </form>
-                    <div class="profile-menu ml-3 mr-2">
-                      <img src="/assets/img/profile.png" alt="Profile">
-                    </div>
-                    <span>
-                      Irfangi
-                    </span>
-                </div>
-              </nav>
+          <div class="container">
+            <a class="navbar-brand" href="index.html">Web Diskusi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="discussion-menu text-center">
+                  <button class="btn btn-dark" id="newDisc">Create a Discussion</button>
+                  <ul class="mt-3 nav flex-column">
+                      <li class="nav-item">
+                        <a href="" class="nav-link hover-dark">All Dicussion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link hover-dark">Following</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="" class="nav-link hover-dark">Tags</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+              </form>
+              <div href="" class="profile ">
+                <img src="/assets/icon/boy.png" alt="Avatar" class="avatar mr-1">
+                <span class="">Irfangi</span>
+              </div>
             </div>
+          </div>
+        </nav>
       </header>
       <main>
+        <div class="tags-and-title py-2">
           <div class="container">
-              <div class="row">
-                <div class="col-3">
-                    <div class="discussion-border">
-                        <div class="discussion-menu">
-                            <button class="btn btn-dark" id="newDisc">Create a Discussion</button>
-                            <ul class="mt-3 nav flex-column">
-                                <li class="nav-item">
-                                  <a href="" class="nav-link hover-dark">All Dicussion</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="" class="nav-link hover-dark">Following</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="" class="nav-link hover-dark">Tags</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>              
-                </div>
-                <div class="col-9">
-                   <div class="diskusi-box">
-                     <div class="diskusi-main border p-3">
-                       <p class="font-weight-bold">@Irfangi <span class="font-weight-light">32 minutes ago</span></p>
-                       <hr>
-                       <h4>Ini Diskusi yang kan di kerjakan</h4>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus quidem neque dolores. Doloremque minus perspiciatis laudantium officia. Expedita maiores blanditiis aliquam in quo perferendis hic quis unde, dolore quod totam labore, magni qui dignissimos doloremque. Laudantium rem unde ullam, amet reprehenderit eaque, ex eveniet cupiditate omnis praesentium odit nesciunt! Sint ipsam unde earum voluptatibus ullam impedit magnam similique culpa. Incidunt qui, obcaecati optio minus quod harum unde in, laudantium a quae, aut voluptatem expedita ducimus perferendis impedit dignissimos itaque? Quas earum ab officia atque reprehenderit numquam rerum sint saepe. Necessitatibus suscipit, nobis veniam sint et vitae earum quidem voluptas?</p>
-                       <hr>
-                       <ul class="nav">
-                         <li class="nav-item p-2 ">1 Like</li>
-                         <li class="nav-item p-2">Reply</li>
-                       </ul>
-                     </div>
-                     <div class="diskusi-main border p-3">
-                      <p class="font-weight-bold">@Roby <span class="font-weight-light">2 minutes ago</span></p>
-                      <p class="font-weight-bold d-inline text-dark bg-light p-1">
-                        <span class="fa fa-reply"></span>
-                        @Irfangi
-                      </p>
-                      <hr>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptatibus quidem neque dolores. Doloremque minus perspiciatis laudantium officia. Expedita maiores blanditiis aliquam in quo perferendis hic quis unde, dolore quod totam labore, magni qui dignissimos doloremque. Laudantium rem unde ullam, amet reprehenderit eaque, ex eveniet cupiditate omnis praesentium odit nesciunt! Sint ipsam unde earum voluptatibus ullam impedit magnam similique culpa. Incidunt qui, obcaecati optio minus quod harum unde in, laudantium a quae, aut voluptatem expedita ducimus perferendis impedit dignissimos itaque? Quas earum ab officia atque reprehenderit numquam rerum sint saepe. Necessitatibus suscipit, nobis veniam sint et vitae earum quidem voluptas?</p>
-                      <hr>
-                      <ul class="nav">
-                        <li class="nav-item p-2 ">1 Like</li>
-                        <li class="nav-item p-2">Reply</li>
-                      </ul>
-                    </div>
-                    <div class="diskusi-main border p-3">
-                      <p class="font-weight-bold">Reply @Roby</p>
-                      <hr>
-                        <form action="">
-                          <div class="form-group">
-                            <textarea name="" id="" cols="" rows="4" class="form-control"></textarea>
-                          </div>
-                          <button class="btn btn-primary">Reply</button>
-                          <button class="btn btn-outline-primary">Cancel</button>
-                        </form>
-                    </div>
-                   </div>
-                </div>
-              </div>
+            <div class="tags-title text-center">
+              <h4 class="pt-4">This is title</h4>
+              <span class="bg-dark rounded px-1 ml-auto">
+                <a href="" class="text-decoration-none text-white">#css</a>
+                <a href="" class="text-decoration-none text-white">#html</a>
+              </span>
+            </div>
+            <div class="text-left">
+              <span class="text-left"><a href="index.html" class="text-decoration-none text-dark font-weight-bold">Home</a> / discussion</span>
+            </div>
           </div>
+        </div>
+        <div class="container">
+          <div class="main-topic my-4" id="topic1">
+            <div class="row">
+              <div class="col-1">
+                <img src="assets/icon/boy.png" alt="Avatar" class="avatar-list">
+              </div>
+              <div class="col-10">
+                <a href="" class="text-decoration-none text-dark">
+                  <h5 class="d-inline">Irfangi</h5>
+                </a>
+                <span class="date ml-2">
+                  4 days ago
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eveniet eligendi? Dolores aliquam enim illum similique laboriosam sunt cumque accusantium cupiditate tempora nisi! Quidem excepturi id dignissimos, eveniet autem in error at voluptatibus, qui fugiat rerum perferendis similique, incidunt ut aspernatur natus repellat! Quas ut, commodi voluptas accusantium quam reiciendis nemo labore ea quisquam magnam exercitationem quos, et nihil vitae numquam repudiandae velit amet incidunt neque. Saepe vel dolorem pariatur laborum adipisci neque officia magnam expedita et ut doloribus maiores ipsum temporibus, inventore facere perferendis at. Modi voluptatum consequuntur sed earum cupiditate atque quidem placeat voluptate explicabo inventore iure eligendi non maxime, molestias minima qui voluptas, quaerat architecto numquam vel enim doloremque officia? Vel quisquam perferendis cumque assumenda totam quis? Quos ut neque eligendi animi voluptas officia veniam voluptatibus? Ad maxime tenetur, a ex quidem laborum saepe adipisci dicta dolorem, nesciunt reiciendis, id pariatur beatae. Facere sapiente aut nesciunt quas voluptatum itaque similique praesentium ratione eos deserunt voluptatem, repellendus sit placeat. Quisquam tempore placeat quia id voluptatum? Quisquam, neque velit eaque ab quia, dolore soluta recusandae deserunt veniam accusantium ipsa consequatur. Similique qui quae, officiis magni, in ipsum exercitationem cupiditate repudiandae voluptas molestiae numquam esse vel, unde quis deserunt ea.
+                </p>
+                <button class="btn btn-light">
+                  <span class="fa fa-thumbs-o-up mr-1"></span>Like
+                </button>
+                <button class="btn btn-light">
+                  <span class="fa fa-reply mr-1"></span>Reply
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-topic my-4" id="coment1">
+            <div class="row">
+              <div class="col-1">
+                <img src="assets/icon/man.png" alt="Avatar" class="avatar-list">
+              </div>
+              <div class="col-10">
+                <a href="#topic1" class="text-decoration-none text-dark mb-1">
+                  <span class="d-block"><span class="fa fa-reply mr-1"></span>Irfangi</span class="d-block">
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <h5 class="d-inline"><span class=""></span>Roby</h5>
+                </a>
+                <span class="date ml-2">
+                  2 days ago
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eveniet eligendi? Dolores aliquam enim illum similique laboriosam sunt cumque accusantium cupiditate tempora nisi! Quidem excepturi id dignissimos, eveniet autem in error at voluptatibus, qui fugiat rerum perferendis similique, incidunt ut aspernatur natus repellat! Quas ut, commodi voluptas accusantium quam reiciendis nemo labore ea quisquam magnam exercitationem quos, et nihil vitae numquam repudiandae velit amet incidunt neque. Saepe vel dolorem pariatur laborum adipisci neque officia magnam expedita et ut doloribus maiores ipsum temporibus, inventore facere perferendis at. Modi voluptatum consequuntur sed earum cupiditate atque quidem placeat voluptate explicabo inventore iure eligendi non maxime, molestias minima qui voluptas, quaerat architecto numquam vel enim doloremque officia? Vel quisquam perferendis cumque assumenda totam quis? Quos ut neque eligendi animi voluptas officia veniam voluptatibus? Ad maxime tenetur, a ex quidem laborum saepe adipisci dicta dolorem, nesciunt reiciendis, id pariatur beatae. Facere sapiente aut nesciunt quas voluptatum itaque similique praesentium ratione eos deserunt voluptatem, repellendus sit placeat. Quisquam tempore placeat quia id voluptatum? Quisquam, neque velit eaque ab quia, dolore soluta recusandae deserunt veniam accusantium ipsa consequatur. Similique qui quae, officiis magni, in ipsum exercitationem cupiditate repudiandae voluptas molestiae numquam esse vel, unde quis deserunt ea.
+                </p>
+                <button class="btn btn-light">
+                  <span class="fa fa-thumbs-o-up mr-1"></span>Like
+                </button>
+                <button class="btn btn-light">
+                  <span class="fa fa-reply mr-1"></span>Reply
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-topic my-4" id="coment1">
+            <div class="row">
+              <div class="col-1">
+                <img src="assets/icon/man.png" alt="Avatar" class="avatar-list">
+              </div>
+              <div class="col-10">
+                <a href="#topic1" class="text-decoration-none text-dark mb-1">
+                  <span class="d-block"><span class="fa fa-reply mr-1"></span>Irfangi</span class="d-block">
+                </a>
+                <a href="" class="text-decoration-none text-dark">
+                  <h5 class="d-inline"><span class=""></span>Roby</h5>
+                </a>
+                <span class="date ml-2">
+                  2 days ago
+                </span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eveniet eligendi? Dolores aliquam enim illum similique laboriosam sunt cumque accusantium cupiditate tempora nisi! Quidem excepturi id dignissimos, eveniet autem in error at voluptatibus, qui fugiat rerum perferendis similique, incidunt ut aspernatur natus repellat! Quas ut, commodi voluptas accusantium quam reiciendis nemo labore ea quisquam magnam exercitationem quos, et nihil vitae numquam repudiandae velit amet incidunt neque. Saepe vel dolorem pariatur laborum adipisci neque officia magnam expedita et ut doloribus maiores ipsum temporibus, inventore facere perferendis at. Modi voluptatum consequuntur sed earum cupiditate atque quidem placeat voluptate explicabo inventore iure eligendi non maxime, molestias minima qui voluptas, quaerat architecto numquam vel enim doloremque officia? Vel quisquam perferendis cumque assumenda totam quis? Quos ut neque eligendi animi voluptas officia veniam voluptatibus? Ad maxime tenetur, a ex quidem laborum saepe adipisci dicta dolorem, nesciunt reiciendis, id pariatur beatae. Facere sapiente aut nesciunt quas voluptatum itaque similique praesentium ratione eos deserunt voluptatem, repellendus sit placeat. Quisquam tempore placeat quia id voluptatum? Quisquam, neque velit eaque ab quia, dolore soluta recusandae deserunt veniam accusantium ipsa consequatur. Similique qui quae, officiis magni, in ipsum exercitationem cupiditate repudiandae voluptas molestiae numquam esse vel, unde quis deserunt ea.
+                </p>
+                <button class="btn btn-light">
+                  <span class="fa fa-thumbs-o-up mr-1"></span>Like
+                </button>
+                <button class="btn btn-light">
+                  <span class="fa fa-reply mr-1"></span>Reply
+                </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </main>
 
     <!-- Optional JavaScript -->
@@ -107,5 +159,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -56,144 +56,110 @@
       </header>
       <main>
           <div class="container">
-              <div class="row">
-                <div class="col-3">
-                    <div class="discussion-border">
-                        <div class="discussion-menu">
-                            <button class="btn btn-dark  form-control" id="newDisc" onclick="createTopic()">Create a Discussion</button>
-                            <ul class="mt-3 nav flex-column">
-                                <li class="nav-item">
-                                  <a href="index.html" class="nav-link hover-dark text-dark">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="all_discussion.html" class="nav-link hover-dark text-dark active">All Dicussion</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="tags.html" class="nav-link hover-dark text-dark">Tags</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>              
+            <div class="row">
+              <div class="col-lg-3 side-menu">
+                <div class="discussion-border">
+                    <div class="discussion-menu">
+                        <button class="btn btn-dark  form-control" id="newDisc" onclick="createTopic()">Create a Discussion</button>
+                        <ul class="mt-3 nav flex-column">
+                            <li class="nav-item">
+                              <a href="index.html" class="nav-link hover-dark text-dark active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="all_discussion.html" class="nav-link hover-dark text-dark">All Dicussion</a>
+                            </li>
+                            <li class="nav-item">
+                              <a href="tags.html" class="nav-link hover-dark text-dark">Tags</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>              
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-9">
+              <div class="diskusi">
+                <!-- form input -->
+                <div class="border p-3" id="formTopic">
+                  <p class="font-weight-bold">New Topic</p>
+                  <hr>
+                    <form action="">
+                      <div class="form-group">
+                        <label for="title">Title Topic</label>
+                        <input id="title" type="text" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="topic">Topic</label>
+                        <textarea name="" id="topic" cols="" rows="4" class="form-control"></textarea>
+                      </div>
+                      <button class="btn btn-primary">Post</button>
+                      <button class="btn btn-outline-primary" onclick="createTopic()">Cancel</button>
+                    </form>
                 </div>
-                <div class="col-9">
-                  <div class="diskusi">
-                    <!-- form input -->
-                    <div class="border p-3" id="formTopic">
-                      <p class="font-weight-bold">New Topic</p>
-                      <hr>
-                        <form action="">
-                          <div class="form-group">
-                            <label for="title">Title Topic</label>
-                            <input id="title" type="text" class="form-control">
-                          </div>
-                          <div class="form-group">
-                            <label for="topic">Topic</label>
-                            <textarea name="" id="topic" cols="" rows="4" class="form-control"></textarea>
-                          </div>
-                          <button class="btn btn-primary">Post</button>
-                          <button class="btn btn-outline-primary" onclick="createTopic()">Cancel</button>
-                        </form>
+                <!-- list post -->
+                <div class="diskusi-item hover-dark rounded p-2">
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <a href="">
+                        <img src="/assets/icon/boy.png" alt="Avatar" class="avatar-list mr-1">
+                      </a>
                     </div>
-                    <!-- list post -->
-                    <div class="diskusi-item hover-dark rounded p-2">
-                      <div class="row">
-                        <div class="col-1">
-                          <a href="">
-                            <img src="/assets/icon/man.png" alt="Avatar" class="avatar-list mr-1">
-                          </a>
-                        </div>
-                        <div class="col-10">
-                          <a href="" class="text-decoration-none text-dark">
-                            <h5>Title</h5>
-                            <p>
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus labore aspernatur voluptate! Natus, quod delectus.....
-                            </p>
-                          </a>
-                          <div>
-                            <p class="font-weight-light d-inline">
-                              7 minutes ago 
-                            </p>
-                            <span class="bg-dark rounded px-1 ml-auto">
-                              <a href="" class="text-decoration-none text-white">#css</a>
-                              <a href="" class="text-decoration-none text-white">#html</a>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-1">
-                          <a href="" class="text-decoration-none text-dark">
-                            <span class="fa fa-comment">3</span>
-                          </a>
-                        </div>
+                    <div class="col-8 col-md-10">
+                      <a href="detail.html" class="text-decoration-none text-dark">
+                        <h5>Title</h5>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus labore aspernatur voluptate! Natus, quod delectus.....
+                        </p>
+                      </a>
+                      <div>
+                        <p class="font-weight-light d-inline">
+                          7 minutes ago 
+                        </p>
+                        <span class="bg-dark rounded px-1 ml-auto">
+                          <a href="" class="text-decoration-none text-white">#css</a>
+                          <a href="" class="text-decoration-none text-white">#html</a>
+                        </span>
                       </div>
                     </div>
+                    <div class="col-2 col-md-1 text-right">
+                      <a href="" class="text-decoration-none text-dark">
+                        <span class="fa fa-comment">1</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="diskusi-item hover-dark rounded p-2">
-                      <div class="row">
-                        <div class="col-1">
-                          <a href="">
-                            <img src="/assets/icon/boy.png" alt="Avatar" class="avatar-list mr-1">
-                          </a>
-                        </div>
-                        <div class="col-10">
-                          <a href="" class="text-decoration-none text-dark">
-                            <h5>Title</h5>
-                            <p>
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus labore aspernatur voluptate! Natus, quod delectus.....
-                            </p>
-                          </a>
-                          <div>
-                            <p class="font-weight-light d-inline">
-                              7 minutes ago 
-                            </p>
-                            <span class="bg-dark rounded px-1 ml-auto">
-                              <a href="" class="text-decoration-none text-white">#css</a>
-                              <a href="" class="text-decoration-none text-white">#html</a>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-1">
-                          <a href="" class="text-decoration-none text-dark">
-                            <span class="fa fa-comment">1</span>
-                          </a>
-                        </div>
+                <div class="diskusi-item hover-dark rounded p-2">
+                  <div class="row">
+                    <div class="col-2 col-md-1">
+                      <a href="">
+                        <img src="/assets/icon/boy.png" alt="Avatar" class="avatar-list mr-1">
+                      </a>
+                    </div>
+                    <div class="col-8 col-md-10">
+                      <a href="detail.html" class="text-decoration-none text-dark">
+                        <h5>Title</h5>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus labore aspernatur voluptate! Natus, quod delectus.....
+                        </p>
+                      </a>
+                      <div>
+                        <p class="font-weight-light d-inline">
+                          7 minutes ago 
+                        </p>
+                        <span class="bg-dark rounded px-1 ml-auto">
+                          <a href="" class="text-decoration-none text-white">#css</a>
+                          <a href="" class="text-decoration-none text-white">#html</a>
+                        </span>
                       </div>
                     </div>
-
-                    <!-- list post -->
-                    <div class="diskusi-item hover-dark rounded p-2">
-                      <div class="row">
-                        <div class="col-1">
-                          <a href="">
-                            <img src="/assets/icon/man.png" alt="Avatar" class="avatar-list mr-1">
-                          </a>
-                        </div>
-                        <div class="col-10">
-                          <a href="" class="text-decoration-none text-dark">
-                            <h5>Title</h5>
-                            <p>
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus labore aspernatur voluptate! Natus, quod delectus.....
-                            </p>
-                          </a>
-                          <div>
-                            <p class="font-weight-light d-inline">
-                              7 minutes ago 
-                            </p>
-                            <span class="bg-dark rounded px-1 ml-auto">
-                              <a href="" class="text-decoration-none text-white">#css</a>
-                              <a href="" class="text-decoration-none text-white">#html</a>
-                            </span>
-                          </div>
-                        </div>
-                        <div class="col-1">
-                          <a href="" class="text-decoration-none text-dark">
-                            <span class="fa fa-comment">1</span>
-                          </a>
-                        </div>
-                      </div>
+                    <div class="col-2 col-md-1 text-right">
+                      <a href="" class="text-decoration-none text-dark">
+                        <span class="fa fa-comment">1</span>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
       </main>
 
