@@ -1,0 +1,51 @@
+$color-dark : #808080;
+$color-light : #e7e7e7;
+
+
+// navlink
+.nav-item a.active{
+    background-color: $color-light;
+}
+.avatar{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    background-color: lightslategray;
+}
+.avatar-list{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    background-color: lightslategray;
+}
+.profile{
+    margin-left: 1em;
+    @media only screen and (max-width: 992px){
+        margin-left: 0;
+    }
+}
+.collapse .discussion-menu{
+    display: none;
+    @media only screen and (max-width: 992px){
+        display: block;
+    }
+}
+main{
+    margin-top: 100px;
+}
+
+// form input
+#formTopic{
+    display: none;
+}
+#formTopic.active{
+    display: block;
+}
+
+.hover-dark:hover{
+    background-color: $color-light;
+}
+
+#newDisc:scope{
+    border: none;
+}
