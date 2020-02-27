@@ -31,6 +31,9 @@ $color-light : #e7e7e7;
     }
 }
 main{
+    margin-top: 70px;
+}
+main.detail{
     margin-top: 55px;
 }
 
@@ -63,4 +66,8 @@ main{
 }
 .date{
     font-size: 1em;
+}
+
+.search-xs{
+    width: 100%;
 }

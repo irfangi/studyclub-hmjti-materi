@@ -27,8 +27,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="discussion-menu text-center">
-                  <button class="btn btn-dark" id="newDisc">Create a Discussion</button>
+              <div class="discussion-menu">
+                  <button class="btn btn-dark d-none d-lg-block" id="newDisc">Create a Discussion</button>
                   <ul class="mt-3 nav flex-column">
                       <li class="nav-item">
                         <a href="" class="nav-link hover-dark">All Dicussion</a>
@@ -42,11 +42,11 @@
                   </ul>
               </div>
 
-              <form class="form-inline my-2 my-lg-0 ml-auto">
+              <form class="form-inline my-2 my-lg-0 ml-auto d-none d-lg-block">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
               </form>
-              <div href="" class="profile ">
+              <div href="" class="profile pl-3">
                 <img src="/assets/icon/boy.png" alt="Avatar" class="avatar mr-1">
                 <span class="">Irfangi</span>
               </div>
@@ -57,6 +57,13 @@
       <main>
           <div class="container ">
               <div class="row">
+                <div class="search-xs d-flex jsutify-content-between flex-grow-1 d-none d-md-none">
+                  <i class="fa fa-edit fa-lg p-4" id="newDisc" onclick="createTopic()"></i>
+                  <form class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
                 <div class="col-lg-3 side-menu">
                     <div class="discussion-border">
                         <div class="discussion-menu">
